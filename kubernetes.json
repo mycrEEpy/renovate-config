@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "kubernetes": {
+    "fileMatch": [
+      "k8s/.+\\.y[a]?ml$",
+      "deploy/.+\\.y[a]?ml$"
+    ]
+  },
+  "flux": {
+    "fileMatch": [
+      "k8s/.+\\.y[a]?ml$",
+      "deploy/.+\\.y[a]?ml$"
+    ]
+  }
+}
