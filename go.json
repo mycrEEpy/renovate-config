@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^github.com/aws/aws-sdk-go-v2.*"],
+      "groupName": "aws-sdk-go-v2"
+    },
+    {
+      "matchPackagePatterns": ["^k8s.io/.*"],
+      "groupName": "k8s.io"
+    },
+    {
+      "matchPackagePatterns": ["^gorm.io/.*"],
+      "groupName": "gorm.io"
+    },
+    {
+      "matchPackagePatterns": ["^github.com/fluxcd/.*"],
+      "groupName": "fluxcd"
+    }
+  ]
+}
